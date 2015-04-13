@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="屏参设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+       
+    </RelativeLayout>
+
+        	<ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:scrollbarStyle="outsideOverlay" 
+    		 >
+
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="14dp"
+	    android:background="@drawable/preference_single_item"
+	    android:clickable="false"
+	    android:gravity="center_vertical" >
+
+	    <TableLayout
+	        android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="6dp" >
+
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/TextView04"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:padding="8dp"
+	                android:text="显示屏"
+	                android:textColor="#000"
+	                android:textSize="17sp" />
+
+	            <EditText
+	                android:id="@+id/number2"
+	                android:layout_width="180dp"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="phone"
+	                android:hint="电话号码" >
+
+	                <requestFocus />
+	            </EditText>
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	        </TableRow>
+
+	    </TableLayout>
+
+	    <ImageView
+	        android:id="@+id/ImageView01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/tableLayout1"
+	        android:layout_alignTop="@+id/tableLayout1"
+	        android:clickable="true"
+	        android:scaleType="matrix"
+	        android:src="@drawable/find_more_friend_addfriend_icon2" 
+	        android:onClick="add_phone_number"
+	        />
+
+	</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/preference_first_item"
+            android:clickable="false"
+            android:gravity="center_vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp" >
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="屏幕宽度"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/LED_Width_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="横向像素点个数" 
+                        android:inputType="phone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="屏幕高度"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/LED_Height_dot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="纵向像素点个数" 
+                        android:inputType="phone"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="LED灯板类型"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+
+            <TextView
+                android:id="@+id/LED_Board_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:padding="8dp"
+                android:text="红色"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:text="单元板接口"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/LED_Eth_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:padding="8dp"
+                android:text="HUB12"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:text="数据极性"
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/LED_OE_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:text="负极"
+                android:padding="8dp"
+                android:textColor="@color/gray"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+        	    <Button
+        	        android:id="@+id/send_HDW_ALL"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/btn_style_green"
+        	        android:layout_marginBottom="10dp"
+        	        android:layout_marginLeft="6dp"
+        	        android:layout_marginRight="6dp"
+        	        android:layout_marginTop="10dp"
+        	        android:layout_weight="0.00"
+        	        android:padding="1dp"
+        	        android:text="发送硬件参数"
+        	        android:textSize="17sp" 
+        	        android:onClick="send_HDW_ALL"
+        	        />
+<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="14dp"
+	    android:background="@drawable/preference_single_item"
+	    android:clickable="false"
+	    android:gravity="center_vertical" >
+
+	    <TableLayout
+	        android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginTop="6dp" >
+
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/TextView04"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:padding="8dp"
+	                android:text="管理员号"
+	                android:textColor="#000"
+	                android:textSize="17sp" />
+
+	            <EditText
+	                android:id="@+id/adminNumber"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:ems="10"
+	                android:inputType="phone"
+	                android:hint="电话号码" >
+
+	                
+	            </EditText>
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	        </TableRow>
+
+	    </TableLayout>
+
+	</RelativeLayout>
+        	    <Button
+        	        android:id="@+id/send_Admin_ALL"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/btn_style_green"
+        	        android:layout_marginBottom="10dp"
+        	        android:layout_marginLeft="6dp"
+        	        android:layout_marginRight="6dp"
+        	        android:layout_marginTop="10dp"
+        	        android:layout_weight="0.00"
+        	        android:padding="1dp"
+        	        android:text="添加以上号码为管理员"
+        	        android:textSize="17sp" 
+        	        android:onClick="send_Admin_ALL"
+        	        />
+        	</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

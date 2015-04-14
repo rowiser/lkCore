@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    name="exportLib"
+    basedir="."
+    default="export" >
+
+    <import file="/Users/kaili/Documents/workspace/AndroidPackageProperties.xml" >
+    </import>
+    <!-- Java源文件目录 -->
+
+    <property
+        name="srcdir"
+        value="src" />
+
+    <property
+        name="srcdir-ospath"
+        value="${basedir}\${srcdir}" />
+    <!-- 外部类库所在目录 -->
+
+    <property
+        name="external-lib"
+        value="libs" />
+
+    <property
+        name="external-lib-ospath"
+        value="${basedir}\${external-lib}" />
+    <!-- 生成class目录 -->
+
+    <property
+        name="outdir-classes"
+        value="${outdir-bin}\classes" />
+
+    <property
+        name="outdir-classes-ospath"
+        value="${basedir}\${outdir-classes}" />
+
+    <!-- 打包lib库放的位置 -->
+
+    <property
+        name="destdir"
+        value="${basedir}/export/CanDefine.jar" />
+    <!-- 要打包到类库中的内容 -->
+
+    <path id="lib_file" >
+
+        <fileset dir="${outdir-classes-ospath}" >
+
+            <include name="**/*Callback*.class" />
+
+            <include name="**/CanFeature*.class" />
+
+            <include name="**/CanDefine*.class" />
+
+            <include name="**/CanDefineSender*.class" />
+
+            <include name="**/AMBTemperature*.class" />
+
+            <include name="**/*Warnning*.class" />
+
+            <include name="**/CanConstant*.class" />
+
+            <include name="**/CanController*.class" />
+
+            <include name="**/CanTable*.class" />
+
+            <include name="**/*Command*.class" />
+
+            <include name="**/*Info*.class" />
+
+            <include name="**/*State*.class" />
+
+            <include name="**/*Manager*.class" />
+
+            <include name="**/*Translate*.class" />
+
+            <include name="**/*Listener*.class" />
+
+            <include name="**/*Util*.class" />
+        </fileset>
+    </path>
+
+</project>
